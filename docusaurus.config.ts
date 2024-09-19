@@ -15,7 +15,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'SMS Atibaia', // Usually your GitHub org/user name.
   projectName: 'nep-atibaia', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -76,7 +76,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Inscrições',
+          label: 'Solicitações',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
       ],
