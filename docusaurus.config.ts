@@ -8,7 +8,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://nep-atibaia.vercel.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -85,52 +85,56 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Documentação',
+          title: 'Neste site',
           items: [
             {
-              label: 'Docs',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Carta de Serviços',
+              to: '/docs/category/serviços',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Rede Intersetorial',
+              to: '/locais/category/rede-intersetorial',
             },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
             {
               label: 'Blog',
               to: '/blog',
             },
+          ],
+        },
+        {
+          title: 'Links',
+          items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Site da Prefeitura',
+              href: 'https://www.atibaia.sp.gov.br/',
+            },
+            {
+              label: 'Página da Secretaria de Saúde',
+              href: 'https://www.atibaia.sp.gov.br/prefeitura/secretarias/saude',
+            },
+            {
+              label: 'Manual de Procedimentos para Convênio - SMS',
+              href: 'https://docs.google.com/document/d/1L0TR0clwLEftfB3xOSNx4eKVo4wltv1VclxT2ePafnc/edit?usp=sharing',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} NEP Atibaia`,
+
+      logo: {
+        alt: "Logo Atibaia Capital Nacional do Morango",
+        src: "/img/selo-capital-nacional-do-morango.png",
+        // href: 'https://atibaia.sp.gov.br',
+        width: "100",
+        height: "58",
+      },
+
+      copyright: `© ${new Date().getFullYear()} NEP Atibaia`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-  } satisfies Preset.ThemeConfig,
+  },
 };
 
 export default config;

@@ -10,32 +10,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Objetivo',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Estágio na área da saúde é onde o conhecimento se transforma 
+        em cuidado, e a teoria ganha vida no bem-estar de cada paciente.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Benefícios',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        DO estágio na saúde é o momento em que o estagiário cresce não apenas como profissional, 
+        mas como ser humano, aprendendo a salvar vidas enquanto constrói a sua própria carreira.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Suporte',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        No estágio na área da saúde, o estagiário nunca caminha sozinho – é guiado por profissionais 
+        experientes que oferecem apoio, conhecimento e a confiança necessária para enfrentar desafios reais.
       </>
     ),
   },
