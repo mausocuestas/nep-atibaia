@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Objetivo',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/target.svg').default,
     description: (
       <>
         Estágio na área da saúde é onde o conhecimento se transforma 
@@ -21,17 +21,17 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Benefícios',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/plane-take-off.svg').default,
     description: (
       <>
-        DO estágio na saúde é o momento em que o estagiário cresce não apenas como profissional, 
+        O estágio na saúde é o momento em que o estagiário cresce não apenas como profissional, 
         mas como ser humano, aprendendo a salvar vidas enquanto constrói a sua própria carreira.
       </>
     ),
   },
   {
     title: 'Suporte',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/support.svg').default,
     description: (
       <>
         No estágio na área da saúde, o estagiário nunca caminha sozinho – é guiado por profissionais 
