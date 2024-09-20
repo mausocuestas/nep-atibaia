@@ -88,12 +88,8 @@ const config: Config = {
           title: 'Neste site',
           items: [
             {
-              label: 'Carta de Serviços',
-              to: '/docs/category/serviços',
-            },
-            {
-              label: 'Rede Intersetorial',
-              to: '/locais/category/rede-intersetorial',
+              label: 'Solicitações',
+              to: '/docs/',
             },
             {
               label: 'Blog',
