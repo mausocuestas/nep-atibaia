@@ -89,7 +89,7 @@ const config: Config = {
           items: [
             {
               label: 'Solicitações',
-              to: '/docs/',
+              to: '/docs',
             },
             {
               label: 'Blog',
