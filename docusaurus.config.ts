@@ -69,7 +69,7 @@ const config: Config = {
       title: 'NEP Atibaia',
       logo: {
         alt: 'NEP Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo-nep.png',
       },
       items: [
         {
