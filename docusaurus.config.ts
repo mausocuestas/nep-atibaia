@@ -108,10 +108,6 @@ const config: Config = {
               label: 'Página da Secretaria de Saúde',
               href: 'https://www.atibaia.sp.gov.br/prefeitura/secretarias/saude',
             },
-            {
-              label: 'Manual de Procedimentos para Convênio - SMS',
-              href: 'https://docs.google.com/document/d/1L0TR0clwLEftfB3xOSNx4eKVo4wltv1VclxT2ePafnc/edit?usp=sharing',
-            },
           ],
         },
       ],

@@ -24,7 +24,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/plane-take-off.svg').default,
     description: (
       <>
-        O estágio na saúde é o momento em que o estagiário cresce não apenas como profissional, 
+        O estágio na saúde é o momento em que você cresce não apenas como profissional, 
         mas como ser humano, aprendendo a salvar vidas enquanto constrói a sua própria carreira.
       </>
     ),
@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/support.svg').default,
     description: (
       <>
-        No estágio na área da saúde, o estagiário nunca caminha sozinho – é guiado por profissionais 
+        No estágio na área da saúde, você não caminha sozinho – é guiado por profissionais 
         experientes que oferecem apoio, conhecimento e a confiança necessária para enfrentar desafios reais.
       </>
     ),
