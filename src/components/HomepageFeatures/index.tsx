@@ -12,11 +12,11 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Solicitações Pendentes',
+    title: 'Manual NEP',
     Svg: require('@site/static/img/target.svg').default,
     description: (
       <>
-        Visualize e gerencie todas as solicitações pendentes de estágio.
+        Passoa a passo para solicitação de estágios e visitas técnicas
       </>
     ),
     link: 'docs/intro',
@@ -32,11 +32,11 @@ const FeatureList: FeatureItem[] = [
     link: 'docs/intro',
   },
   {
-    title: 'Todas as Solicitações',
-    Svg: require('@site/static/img/support.svg').default,
+    title: 'POPs',
+    Svg: require('@site/static/img/logic-flow.svg').default,
     description: (
       <>
-        Acesse o histórico completo de todas as solicitações de estágio.
+        Aqui você encontra os Procedimentos Operacionais Padrão
       </>
     ),
     link: 'docs/intro',
