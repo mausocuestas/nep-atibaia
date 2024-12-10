@@ -6,29 +6,16 @@ const config: Config = {
   title: 'NEP Atibaia',
   tagline: 'Núcleo de Educação Permanente',
   favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
   url: 'https://nep-atibaia.vercel.app',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
   organizationName: 'SMS Atibaia', // Usually your GitHub org/user name.
   projectName: 'nep-atibaia', // Usually your repo name.
-
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'pt-BR',
     locales: ['pt-BR'],
   },
-
   presets: [
     [
       'classic',
@@ -42,26 +29,37 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          postsPerPage: 5,
         },
+
         theme: {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
     ],
   ],
-
+  plugins: [
+  [
+    '@docusaurus/plugin-content-docs',
+    {
+      id: 'manual',
+      path: 'manual',
+      routeBasePath: 'manual',
+      sidebarPath: require.resolve('./sidebars.js'),
+    },
+  ],
+  [
+    '@easyops-cn/docusaurus-search-local',
+    {
+      // Opcional: gera o arquivo de indexação para a busca local (ex: se você quiser fazer deploy da documentação como um site estático).
+      indexDocs: true,
+      indexBlog: false,
+      indexPages: true,
+      // Opcional: define o idioma dos documentos (pode ser uma string ou um array de strings)
+      language: ["en"],
+    }
+  ],
+],
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -76,9 +74,22 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Solicitações',
+          label: 'Documentos',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          to: '/manual/intro',    // ./docs-api/Intro.md
+          label: 'Manual',
+          position: 'left',
+          sidebar: {
+            hideable: false,
+            autoCollapseCategories: true,
+          },
+        },
+        // {
+        //   to: '/blog', 
+        //   label: 'Blog', 
+        //   position: 'left'
+        // },
       ],
     },
     footer: {
@@ -91,10 +102,10 @@ const config: Config = {
               label: 'Solicitações',
               to: '/docs/intro',
             },
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
+            // {
+            //   label: 'Blog',
+            //   to: '/blog',
+            // },
           ],
         },
         {

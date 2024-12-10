@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Solicitações de Estágio
+# Introdução
 
 O Núcleo de Educação Permanente (NEP) de Atibaia oferece oportunidades de estágio para estudantes dos cursos de 
 
