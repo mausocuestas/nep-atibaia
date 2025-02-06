@@ -1,0 +1,27 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "docusaurus/package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "build"
+        }
+      },
+      {
+        "src": "backend-fastify/index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/dados",
+        "dest": "/backend-fastify/index.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/docusaurus/build/$1"
+      }
+    ]
+  }
+  
