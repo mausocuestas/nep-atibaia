@@ -12,8 +12,8 @@ const DadosPlanilha = () => {
         // Extrair cabeçalhos e linhas
         const [headers, ...rows] = data;
 
-        // Filtrar apenas os dados do bairro "Campo dos Aleixos"
-        const filteredRows = rows.filter((row) => row[2] === "Campo dos Aleixos");
+        // Filtrar apenas os dados do bairro "Alvinópolis"
+        const filteredRows = rows.filter((row) => row[2] === "Alvinópolis");
 
         // Armazenar os dados filtrados no estado
         setDados({ headers, rows: filteredRows });
