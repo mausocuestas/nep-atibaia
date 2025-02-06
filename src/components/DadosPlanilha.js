@@ -13,7 +13,7 @@ const DadosPlanilha = () => {
         const [headers, ...rows] = data;
 
         // Filtrar apenas os dados do bairro "Alvinópolis"
-        const filteredRows = rows.filter((row) => row[2] === "Alvinópolis");
+        const filteredRows = rows.filter((row) => row[1] === "Alvinópolis");
 
         // Armazenar os dados filtrados no estado
         setDados({ headers, rows: filteredRows });
