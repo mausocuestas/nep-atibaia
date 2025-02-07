@@ -10,7 +10,7 @@ const DadosPage = () => {
     const fetchDados = async () => {
       try {
         const { data, error } = await supabase
-          .from('produtos_famacia') // Substitua pelo nome da sua tabela
+          .from('produtos_farma') // Substitua pelo nome da sua tabela
           .select('*'); // Seleciona todas as colunas
 
         if (error) {
