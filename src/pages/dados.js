@@ -34,14 +34,13 @@ const DadosPage = () => {
       {loading ? (
         <p>Carregando...</p>
       ) : (
-        <ul>
-          {dados.map((item, index) => (
-            <li key={index}>
-              {/* Exiba os campos da tabela conforme necessário */}
-              ID: {item.id}, Nome: {item.produto}, Código: {item.catmat}
-            </li>
-          ))}
-        </ul>
+<ul>
+  {dados.map((item) => (
+    <li key={item.catmat}>
+      Código: {item.catmat}, Nome: {item.produto}
+    </li>
+  ))}
+</ul>
       )}
     </div>
   );
