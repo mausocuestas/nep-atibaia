@@ -37,7 +37,7 @@ const DadosPage = () => {
 <ul>
   {dados.map((item) => (
     <li key={item.catmat}>
-      Código: {item.catmat}, Nome: {item.produto}
+      {item.produto}
     </li>
   ))}
 </ul>
